@@ -8,14 +8,25 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f2f2f2;
-      color: #333;
+      color: #fff;
       text-align: center;
+      background: url('https://files.catbox.moe/ji6woi.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6); /* затемнение */
+      z-index: -1;
     }
     .container {
       max-width: 480px;
       margin: 0 auto;
       padding: 20px;
+      position: relative;
+      z-index: 1;
     }
     .avatar {
       width: 160px;
@@ -23,7 +34,7 @@
       object-fit: cover;
       border-radius: 50%;
       border: 4px solid #fff;
-      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+      box-shadow: 0 0 12px rgba(0,0,0,0.3);
       margin-top: 30px;
     }
     h1 {
@@ -32,7 +43,7 @@
     }
     p {
       font-size: 16px;
-      color: #777;
+      color: #ccc;
     }
     .link-button {
       display: block;
@@ -58,7 +69,7 @@
     <a class="link-button" href="https://www.instagram.com/mistermardonchikkk/" target="_blank">📸 Instagram</a>
     <a class="link-button" href="https://t.me/Prens_03" target="_blank">💬 Telegram</a>
     <a class="link-button" href="https://www.youtube.com/@SHERIF_GAMING_YT" target="_blank">▶️ YouTube</a>
-    <a class="link-button" href="https://wa.me/998880007432" target="_blank">📞 WhatsApp / Позвонить</a>
+    <a class="link-button" href="tel:+998880007432">📞 Позвонить</a>
   </div>
 </body>
 </html>
